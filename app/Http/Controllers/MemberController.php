@@ -17,14 +17,15 @@ class MemberController extends Controller
     public function members(Request $request)
     {
         $user_id = auth()->id(); 
-    
         $teamMembers = DB::table('teams')
             ->where('user_id', $user_id)
             ->pluck('id'); 
-    
+           
         $members = DB::table('users')
             ->whereIn('team_id', $teamMembers)
             ->paginate(10); 
+
+            
     
         return view('members.index', compact('members'));
     }
