@@ -60,7 +60,40 @@ In order to ensure that the Laravel community is welcoming to all, please review
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
+                                                                                                                                                                                                                                                                
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Project Name
+
+## Description
+A brief description of the project and its purpose.
+
+## Prerequisites
+- PHP >= 8.0
+- Composer
+- MySQL or any other database used
+- Laravel framework 
+
+## Installation Steps
+Follow these steps to set up the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/p4prabhash/sembark.git
+
+2.composer update
+
+3.Create a copy of the .env file:
+      cp .env.example .env
+4.Configure the .env file:
+   Set your database connection details (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+   Update other environment variables as needed.
+
+5.php artisan migrate
+6.php artisan db:seed
+7.php artisan db:seed --class=SuperAdminSeeder
+
+
+
